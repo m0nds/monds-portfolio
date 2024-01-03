@@ -52,6 +52,21 @@ const skills = [
     name: "Typescript",
     icon: images.typescript,
   },
+  {
+    id: 10,
+    name: "Next Js",
+    icon: images.nextjs,
+  },
+  {
+    id: 11,
+    name: "tailwind CSS",
+    icon: images.tailwind,
+  },
+  {
+    id: 12,
+    name: "styled components",
+    icon: images.styled,
+  },
 ];
 
 const experiences = [

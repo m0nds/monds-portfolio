@@ -129,8 +129,7 @@
       width: 100%;
 
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
 
       li {
@@ -149,6 +148,14 @@
             color: var(--secondary-color);
           }
         }
+
+        .app__download-cv {
+          background-color: #313bac;
+          color: #fef4f5;
+          text-decoration: none;
+          padding: 0.55rem;
+          border-radius: 5px;
+        }
       }
     }
 
@@ -157,6 +164,24 @@
     }
   }
   @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+.app__download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .app__download-cv {
+    background-color: #313bac;
+    color: #fef4f5;
+    text-decoration: none;
+    padding: 0.55rem;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 900px) {
     display: none;
   }
 }
