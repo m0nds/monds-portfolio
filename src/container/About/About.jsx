@@ -44,10 +44,10 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know say
-        <span> better devs</span>
+        I know 
+        <span> great devs</span>
         <br />
-        na <span>better business</span>
+        mean <span>better business</span>
       </h2>
 
       <div className="app__profiles">

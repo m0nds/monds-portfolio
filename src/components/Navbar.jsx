@@ -53,7 +53,7 @@ const Navbar = () => {
                   borderRadius: "5px",
                   textDecoration: "none",
                 }}
-                href={images.CV}
+                href={images.resume}
                 download
               >
                 Download CV
@@ -63,7 +63,7 @@ const Navbar = () => {
         )}
       </div>
       <div className="app__download">
-        <a className="app__download-cv" href={images.CV} download>
+        <a className="app__download-cv" href={images.resume} download>
           Download CV
         </a>
       </div>

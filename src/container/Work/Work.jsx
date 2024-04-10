@@ -19,6 +19,15 @@ const data = [
   },
   {
     id: 2,
+    title: "Apple 15 Pro website clone",
+    description: `A clone of the Apple 15 Pro and 15 pro max website design. It was developed with Gsap and Three.Js`,
+    tags: ["React JS", "UI/UX"],
+    projectLink: "https://apple-15pro-clone.netlify.app/", 
+    codeLink: "https://github.com/m0nds/apple-15pro-site",
+    imgUrl: images.apple,
+  },
+  {
+    id: 3,
     title: "Estate and Property site",
     description: `Find your next perfect place with ease with this Project`,
     tags: ["MERN"],
@@ -27,7 +36,7 @@ const data = [
     imgUrl: images.house,
   },
   {
-    id: 3,
+    id: 4,
     title: "Mern Auth site",
     description: `MERN web app with authentication lets users manage profiles, images, settings, and access protected routes.`,
     tags: ["MERN"],
@@ -36,7 +45,7 @@ const data = [
     imgUrl: images.mernauth,
   },
   {
-    id: 4,
+    id: 5,
     title: "Quiz App",
     description: `The Quiz App allows you to take quizzes on various topics such as sports, general knowledge, music, animals, history and celebrities`,
     tags: ["React JS"],
@@ -45,7 +54,7 @@ const data = [
     imgUrl: images.quiz,
   },
   {
-    id: 5,
+    id: 6,
     title: "Rooms Chat app",
     description: `This is my portfolio website built using Gatsby and Netlify CMS which allows me socket io, reactjs, node Js`,
     tags: ["MERN"],
@@ -54,7 +63,7 @@ const data = [
     imgUrl: images.roomschat,
   },
   {
-    id: 6,
+    id: 7,
     title: "Admin Dashboard",
     description: `Admin dashboard with react, view preferably with Pc or a tablet device`,
     tags: ["UI/UX"],
@@ -63,7 +72,7 @@ const data = [
     imgUrl: images.admin,
   },
   {
-    id: 7,
+    id: 8,
     title: "Monds cocktails",
     description: `This website allows you to learn about different cocktails, their ingredients and how to make them`,
     tags: ["React JS"],
@@ -72,22 +81,13 @@ const data = [
     imgUrl: images.cocktails,
   },
   {
-    id: 8,
+    id: 9,
     title: "My Portfolio Website",
     description: `This is my portfolio website built using reactJS, framer motion and others`,
     tags: ["React JS"],
     projectLink: "", 
     codeLink: "https://github.com/m0nds/monds-portfolio",
     imgUrl: images.portfolio,
-  },
-  {
-    id: 9,
-    title: "Music Tour site",
-    description: `Music tour site, yet to be deployed, watch this space`,
-    tags: ["UI/UX"],
-    projectLink: "", 
-    codeLink: "https://github.com/m0nds/music-app",
-    imgUrl: images.music,
   },
 ]
 

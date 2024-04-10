@@ -46,9 +46,11 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import apple from '../assets/apple.png'
 
 import monds from "../assets/monds.png";
 import CV from "../assets/CV.pdf";
+import resume from '../assets/resume.pdf'
 
 export default {
   email,
@@ -97,5 +99,7 @@ export default {
   nextjs,
   styled,
   mernauth,
-  music
+  music,
+  apple,
+  resume
 };
