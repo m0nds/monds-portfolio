@@ -28,38 +28,27 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if ((name, email, message)) {
-      setLoading(true);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if ((name, email, message)) {
+  //     setLoading(true);
 
-      emailjs
-        .sendForm(
-          "service_ogzligc",
-          "template_ow8wc9q",
-          form.current,
-          "wKxlHdJ3GL6ipdQNE"
-        )
-        .then(() => {
-          setLoading(false);
-          setIsFormSubmitted(true);
-        });
+  //     emailjs
+  //       .sendForm(
+  //         "service_ogzligc",
+  //         "template_ow8wc9q",
+  //         form.current,
+  //         "wKxlHdJ3GL6ipdQNE"
+  //       )
+  //       .then(() => {
+  //         setLoading(false);
+  //         setIsFormSubmitted(true);
+  //       });
 
-      const contact = {
-        _type: "contact",
-        name: name,
-        email: email,
-        message: message,
-      };
-
-      client.create(contact).then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      });
-    } else {
-      setModalOpened(true);
-    }
-  };
+  //   } else {
+  //     setModalOpened(true);
+  //   }
+  // };
 
   const closeModal = () => {
     setModalOpened(false);
@@ -85,24 +74,21 @@ const Footer = () => {
       </div>
 
       {modalOpened && <Modal closeModal={closeModal} />}
- <div id="map">
-            <MapContainer
-              className="map-container"
-              style={{ height: "400px", width: "100%" }}
-              center={position}
-              zoom={13}
-            >
-              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              <Marker position={position}>
-                <Popup>
-                  monds lives here, come over for a cup of coffee :)
-                </Popup>
-              </Marker>
-            </MapContainer>
-          </div>
+      <div id="map">
+        <MapContainer
+          className="map-container"
+          style={{ height: "400px", width: "100%" }}
+          center={position}
+          zoom={13}
+        >
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <Marker position={position}>
+            <Popup>monds lives here, come over for a cup of coffee :)</Popup>
+          </Marker>
+        </MapContainer>
+      </div>
       {!isFormSubmitted ? (
         <form className="app__footer-form app-flex" ref={form}>
-         
           <div className="app__flex">
             <input
               type="text"
@@ -136,7 +122,7 @@ const Footer = () => {
               ref={form}
               type="button"
               className="p-text"
-              onClick={handleSubmit}
+              // onClick={handleSubmit}
             >
               {loading ? "Sending message" : "Send Message"}
             </button>

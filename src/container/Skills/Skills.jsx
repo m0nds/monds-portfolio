@@ -70,69 +70,31 @@ const skills = [
 ];
 
 const experiences = [
-  {
-    id: 1,
-    year: "2019",
-    works: [
-      {
-        name: "Intern",
-        company: "HNG Intership 6.0",
-        desc: "Worked on different tasks and projects in the frontend development",
-      }
-    ],
-  },
+
   {
     id: 2,
     year: "2020",
-    works: [
-      {
-        name: "Intern",
-        company: "XEarth Group Beta",
-        desc: "worked as a frontend developer using reactjs on a food order app named #leteat",
-      }
-    ],
+    name: "Frontend Developer",
+    company: "Bluelight Agency",
+    desc: "Designed interactive web apps, optimized UI, improved performance, and managed version control with collaboration.",
   },
   {
     id: 3,
-    year: "2020-2022",
-    works: [
-      {
-        name: "Frontend Developer",
-        company: "Bluelight Agency",
-        desc: "Worked as a frontend developer using reactjs",
-      }
-    ],
+    year: "2023",
+    name: "Software Developer",
+    company: "Simon says drip",
+    desc: "Developed e-commerce apps with React and PHP, optimized performance, integrated APIs, and improved responsiveness.",
   },
   {
     id: 4,
-    year: "2022",
-    works: [
-      {
-        name: "Frontend development",
-        company: "Altschool",
-        desc: "learned frontend development such as javascript frameworks (vue and reactjs)",
-      }
-    ],
+    year: "2024",
+    name: "Frontend developer",
+    company: "Stratsight",
+    desc: "Developed an enterprise web app with React, optimized APIs, deployed and improved performance.",
   },
 ];
 
 const Skills = () => {
-  // const [experiences, setExperiences] = useState([])
-  // const [skills, setSkills] = useState([])
-
-  // useEffect(() => {
-  //   const query = '*[_type == "experiences"]';
-  //   const skillsQuery = '*[_type == "skills"]'
-
-  //   client.fetch(query).then((data) => {
-  //     setExperiences(data);
-  //   });
-
-  //   client.fetch(skillsQuery).then((data) => {
-  //     setSkills(data);
-  //   });
-  // }, []);
-
   return (
     <>
       <h2 className="head-text">Skills & Experience</h2>
@@ -160,30 +122,20 @@ const Skills = () => {
         <div className="app__skills-exp">
           {experiences.map((experience) => {
             return (
-              <motion.div
-                className="app__skills-exp-item"
-                key={experience.year}
-              >
+              <motion.div className="app__skills-exp-item" key={`${experience.id}-${experience.name}`}>
                 <div className="app__skills-exp-year">
                   <p className="bold-text">{experience.year}</p>
                 </div>
                 <motion.div className="app__skills-exp-works">
-                  {experience.works.map((work) => {
-                    return (
-                      <>
                         <motion.div
                           whileInView={{ opacity: [0, 1] }}
                           transition={{ duration: 0.5 }}
                           className="app__skills-exp-work"
-                          key={work.name}
                         >
-                          <h4 className="bold-text">{work.name}</h4>
-                          <p className="p-text">{work.company}</p>
+                          <h4 className="bold-text">{experience.name}</h4>
+                          <p className="p-text">{experience.company}</p>
                         </motion.div>
-                        <div className="skills-tooltip">{work.desc}</div>
-                      </>
-                    );
-                  })}
+                        <div className="skills-tooltip">{experience.desc}</div>
                 </motion.div>
               </motion.div>
             );
